@@ -20,7 +20,7 @@ public class Main {
         Produto p = new Produto(nome, preco, estoque);
 
         System.out.println("Produto: " + p.getNome()
-                + "\nPreço: " + p.getPreco()
+                + "\nPreço: R$ " + String.format("%.2f", p.getPreco())
                 + "\nEstoque antes da venda: " + p.getEstoque());
         System.out.println();
 
